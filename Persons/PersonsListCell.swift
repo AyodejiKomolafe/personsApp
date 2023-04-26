@@ -25,8 +25,8 @@ struct PersonsListCell: View {
                 .fontWeight(.medium)
                 Text(user.email)
             }
-            
         }
+        .padding(.leading, -20)
     }
 }
 

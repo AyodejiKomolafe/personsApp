@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct PersonsListView: View {
+    @State private var users: [User] = []
     var body: some View {
-            NavigationView {
-                List(MockUser.users) { user in
-                   PersonsListCell(user: user)
-                }
-                .navigationTitle("👨‍👩‍👧‍👦 Persons")
+        NavigationView {
+            List(users) { user in
+                PersonsListCell(user: user)
             }
+            .navigationTitle("👨‍👩‍👧‍👦 Persons")
+        }
+        .onAppear {
+            getUsers()
+        }
+    }
+    func getUsers() {
+        NetworkManager.shared.getUsers { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let users):
+                    self.users = users
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
 

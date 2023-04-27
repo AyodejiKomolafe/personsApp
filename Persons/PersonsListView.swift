@@ -8,30 +8,23 @@
 import SwiftUI
 
 struct PersonsListView: View {
-    @State private var users: [User] = []
+    @StateObject var viewModel = PersonsListViewModel()
     var body: some View {
         NavigationView {
-            List(users) { user in
+            List(viewModel.users) { user in
                 PersonsListCell(user: user)
             }
             .navigationTitle("👨‍👩‍👧‍👦 Persons")
         }
         .onAppear {
-            getUsers()
+            viewModel.getUsers()
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+            
         }
     }
-    func getUsers() {
-        NetworkManager.shared.getUsers { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let users):
-                    self.users = users
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
+    
 }
 
 struct PersonsListView_Previews: PreviewProvider {

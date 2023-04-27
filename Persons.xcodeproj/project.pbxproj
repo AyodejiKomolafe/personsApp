@@ -19,6 +19,7 @@
 		48C8D7E629F9F2BA00066B4F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E529F9F2BA00066B4F /* Alert.swift */; };
 		48C8D7E829F9F5E300066B4F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E729F9F5E300066B4F /* LoadingView.swift */; };
 		48C8D7EA29F9FA8200066B4F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E929F9FA8200066B4F /* RemoteImage.swift */; };
+		48C8D7F429FB2C9600066B4F /* PersonsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7F329FB2C9600066B4F /* PersonsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		48C8D7E529F9F2BA00066B4F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		48C8D7E729F9F5E300066B4F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		48C8D7E929F9FA8200066B4F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		48C8D7F329FB2C9600066B4F /* PersonsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */,
 				48C8D7DB29F9B70E00066B4F /* PersonsListView.swift */,
+				48C8D7F329FB2C9600066B4F /* PersonsDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C8D7F429FB2C9600066B4F /* PersonsDetailView.swift in Sources */,
 				48C8D7CB29F9B18400066B4F /* PersonsApp.swift in Sources */,
 				48C8D7DC29F9B70E00066B4F /* PersonsListView.swift in Sources */,
 				48C8D7E429F9F14D00066B4F /* PersonsListViewModel.swift in Sources */,

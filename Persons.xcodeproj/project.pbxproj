@@ -68,17 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				48C8D7D829F9B3DC00066B4F /* Model */,
+				48C8D7EB29FB2B5D00066B4F /* Views */,
+				48C8D7EF29FB2BCD00066B4F /* Utilities */,
+				48C8D7EE29FB2BAB00066B4F /* Managers */,
+				48C8D7EC29FB2B7600066B4F /* Screens */,
 				48C8D7CA29F9B18400066B4F /* PersonsApp.swift */,
-				48C8D7DB29F9B70E00066B4F /* PersonsListView.swift */,
-				48C8D7DD29F9C05400066B4F /* PersonsListCell.swift */,
 				48C8D7CE29F9B18600066B4F /* Assets.xcassets */,
 				48C8D7D029F9B18600066B4F /* Preview Content */,
-				48C8D7DF29F9C1A600066B4F /* NetworkManager.swift */,
-				48C8D7E129F9C25D00066B4F /* UserError.swift */,
-				48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */,
-				48C8D7E529F9F2BA00066B4F /* Alert.swift */,
-				48C8D7E729F9F5E300066B4F /* LoadingView.swift */,
-				48C8D7E929F9FA8200066B4F /* RemoteImage.swift */,
 			);
 			path = Persons;
 			sourceTree = "<group>";
@@ -97,6 +93,74 @@
 				48C8D7D929F9B3ED00066B4F /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48C8D7EB29FB2B5D00066B4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7F229FB2C1700066B4F /* Image */,
+				48C8D7F129FB2C0200066B4F /* UIKit Components */,
+				48C8D7ED29FB2B7E00066B4F /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48C8D7EC29FB2B7600066B4F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */,
+				48C8D7DB29F9B70E00066B4F /* PersonsListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		48C8D7ED29FB2B7E00066B4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7DD29F9C05400066B4F /* PersonsListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		48C8D7EE29FB2BAB00066B4F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7DF29F9C1A600066B4F /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		48C8D7EF29FB2BCD00066B4F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7F029FB2BD500066B4F /* Alert */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		48C8D7F029FB2BD500066B4F /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7E529F9F2BA00066B4F /* Alert.swift */,
+				48C8D7E129F9C25D00066B4F /* UserError.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		48C8D7F129FB2C0200066B4F /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7E729F9F5E300066B4F /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		48C8D7F229FB2C1700066B4F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				48C8D7E929F9FA8200066B4F /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

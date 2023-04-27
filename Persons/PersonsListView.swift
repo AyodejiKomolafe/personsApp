@@ -10,18 +10,22 @@ import SwiftUI
 struct PersonsListView: View {
     @StateObject var viewModel = PersonsListViewModel()
     var body: some View {
-        NavigationView {
-            List(viewModel.users) { user in
-                PersonsListCell(user: user)
+        ZStack {
+            NavigationView {
+                List(viewModel.users) { user in
+                    PersonsListCell(user: user)
+                }
+                .navigationTitle("👨‍👩‍👧‍👦 Persons")
             }
-            .navigationTitle("👨‍👩‍👧‍👦 Persons")
-        }
-        .onAppear {
-            viewModel.getUsers()
+            .onAppear {
+                viewModel.getUsers()
+            }
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-            
         }
     }
     

@@ -10,10 +10,13 @@ import Foundation
 final class PersonsListViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getUsers() {
+        isLoading = true
         NetworkManager.shared.getUsers { result in
             DispatchQueue.main.async { [self] in
+                isLoading = false
                 switch result {
                 case .success(let users):
                     self.users = users

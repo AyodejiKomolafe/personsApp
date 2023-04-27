@@ -11,8 +11,7 @@ struct PersonsListCell: View {
     let user: User
     var body: some View {
         HStack {
-            Image("blank")
-                .resizable()
+            PersonsRemoteImage(urlString: user.avatar)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)

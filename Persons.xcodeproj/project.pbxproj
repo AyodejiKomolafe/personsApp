@@ -18,6 +18,7 @@
 		48C8D7E429F9F14D00066B4F /* PersonsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */; };
 		48C8D7E629F9F2BA00066B4F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E529F9F2BA00066B4F /* Alert.swift */; };
 		48C8D7E829F9F5E300066B4F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E729F9F5E300066B4F /* LoadingView.swift */; };
+		48C8D7EA29F9FA8200066B4F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C8D7E929F9FA8200066B4F /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewModel.swift; sourceTree = "<group>"; };
 		48C8D7E529F9F2BA00066B4F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		48C8D7E729F9F5E300066B4F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		48C8D7E929F9FA8200066B4F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				48C8D7E329F9F14D00066B4F /* PersonsListViewModel.swift */,
 				48C8D7E529F9F2BA00066B4F /* Alert.swift */,
 				48C8D7E729F9F5E300066B4F /* LoadingView.swift */,
+				48C8D7E929F9FA8200066B4F /* RemoteImage.swift */,
 			);
 			path = Persons;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				48C8D7CB29F9B18400066B4F /* PersonsApp.swift in Sources */,
 				48C8D7DC29F9B70E00066B4F /* PersonsListView.swift in Sources */,
 				48C8D7E429F9F14D00066B4F /* PersonsListViewModel.swift in Sources */,
+				48C8D7EA29F9FA8200066B4F /* RemoteImage.swift in Sources */,
 				48C8D7E029F9C1A600066B4F /* NetworkManager.swift in Sources */,
 				48C8D7DE29F9C05400066B4F /* PersonsListCell.swift in Sources */,
 				48C8D7DA29F9B3ED00066B4F /* User.swift in Sources */,

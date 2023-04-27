@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 
 final class PersonsListViewModel: ObservableObject {
     @Published var users: [User] = []
